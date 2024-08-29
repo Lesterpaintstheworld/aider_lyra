@@ -1,7 +1,7 @@
 import unittest
 
-from aider_nova.coders.udiff_coder import find_diffs
-from aider_nova.dump import dump  # noqa: F401
+from aider_lyra.coders.udiff_coder import find_diffs
+from aider_lyra.dump import dump  # noqa: F401
 
 
 class TestUnifiedDiffCoder(unittest.TestCase):
@@ -72,22 +72,22 @@ Some text...
         content = """
 To implement the `--check-update` option, I will make the following changes:
 
-1. Add the `--check-update` argument to the argument parser in `aider_nova/main.py`.
-2. Modify the `check_version` function in `aider_nova/versioncheck.py` to return a boolean indicating whether an update is available.
-3. Use the returned value from `check_version` in `aider_nova/main.py` to set the exit status code when `--check-update` is used.
+1. Add the `--check-update` argument to the argument parser in `aider_lyra/main.py`.
+2. Modify the `check_version` function in `aider_lyra/versioncheck.py` to return a boolean indicating whether an update is available.
+3. Use the returned value from `check_version` in `aider_lyra/main.py` to set the exit status code when `--check-update` is used.
 
 Here are the diffs for those changes:
 
 ```diff
---- aider_nova/versioncheck.py
-+++ aider_nova/versioncheck.py
+--- aider_lyra/versioncheck.py
++++ aider_lyra/versioncheck.py
 @@ ... @@
      except Exception as err:
          print_cmd(f"Error checking pypi for new version: {err}")
 +        return False
 
---- aider_nova/main.py
-+++ aider_nova/main.py
+--- aider_lyra/main.py
++++ aider_lyra/main.py
 @@ ... @@
      other_group.add_argument(
          "--version",

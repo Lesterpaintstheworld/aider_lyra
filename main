@@ -1,3 +1,3 @@
-from aider_nova import aider_nova, __version__, models, utils
+from aider_lyra import aider_lyra, __version__, models, utils
 from .file_selector import select_relevant_files
 import os

@@ -2,13 +2,13 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from aider_nova.coders import Coder
-from aider_nova.models import Model
-from aider_nova.utils import GitTemporaryDirectory
+from aider_lyra.coders import Coder
+from aider_lyra.models import Model
+from aider_lyra.utils import GitTemporaryDirectory
 
 
 class TestScriptingAPI(unittest.TestCase):
-    @patch("aider_nova.coders.base_coder.Coder.send")
+    @patch("aider_lyra.coders.base_coder.Coder.send")
     def test_basic_scripting(self, mock_send):
         with GitTemporaryDirectory():
             # Setup

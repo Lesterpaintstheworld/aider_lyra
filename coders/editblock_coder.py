@@ -5,7 +5,7 @@ import sys
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from aider_nova import utils
+from aider_lyra import utils
 
 from ..dump import dump  # noqa: F401
 from .base_coder import Coder

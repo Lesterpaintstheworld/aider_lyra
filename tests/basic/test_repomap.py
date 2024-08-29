@@ -4,11 +4,11 @@ import unittest
 
 import git
 
-from aider_nova.dump import dump  # noqa: F401
-from aider_nova.io import InputOutput
-from aider_nova.models import Model
-from aider_nova.repomap import RepoMap
-from aider_nova.utils import GitTemporaryDirectory, IgnorantTemporaryDirectory
+from aider_lyra.dump import dump  # noqa: F401
+from aider_lyra.io import InputOutput
+from aider_lyra.models import Model
+from aider_lyra.repomap import RepoMap
+from aider_lyra.utils import GitTemporaryDirectory, IgnorantTemporaryDirectory
 
 
 class TestRepoMap(unittest.TestCase):

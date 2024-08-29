@@ -1,6 +1,6 @@
 import unittest
 
-from aider_nova.models import Model
+from aider_lyra.models import Model
 
 
 class TestModels(unittest.TestCase):

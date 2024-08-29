@@ -4,11 +4,11 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
-aider_nova_SITE_URL = "https://aider_nova.chat"
-aider_nova_APP_NAME = "aider_nova"
+aider_lyra_SITE_URL = "https://aider_lyra.chat"
+aider_lyra_APP_NAME = "aider_lyra"
 
-os.environ["OR_SITE_URL"] = aider_nova_SITE_URL
-os.environ["OR_APP_NAME"] = aider_nova_APP_NAME
+os.environ["OR_SITE_URL"] = aider_lyra_SITE_URL
+os.environ["OR_APP_NAME"] = aider_lyra_APP_NAME
 
 # `import litellm` takes 1.5 seconds, defer it!
 

@@ -2,7 +2,7 @@
 title: Installation
 has_children: true
 nav_order: 20
-description: How to install and get started pair programming with aider_nova.
+description: How to install and get started pair programming with aider_lyra.
 ---
 
 # Quick start
@@ -13,14 +13,14 @@ Or see the
 [full installation instructions](/docs/install/install.html)
 for more details,
 or the
-[usage instructions](https://aider_nova.chat/docs/usage.html) to start coding with aider_nova.
+[usage instructions](https://aider_lyra.chat/docs/usage.html) to start coding with aider_lyra.
 
-{% include python-m-aider_nova.md %}
+{% include python-m-aider_lyra.md %}
 
 <div class="video-container">
   <video controls poster="/assets/install.jpg">
     <source src="/assets/install.mp4" type="video/mp4">
-    <a href="/assets/install.mp4">Installing aider_nova</a>
+    <a href="/assets/install.mp4">Installing aider_lyra</a>
   </video>
 </div>
 

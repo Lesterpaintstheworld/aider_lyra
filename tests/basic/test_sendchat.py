@@ -3,8 +3,8 @@ from unittest.mock import MagicMock, patch
 
 import httpx
 
-from aider_nova.llm import litellm
-from aider_nova.sendchat import simple_send_with_retries
+from aider_lyra.llm import litellm
+from aider_lyra.sendchat import simple_send_with_retries
 
 
 class PrintCalled(Exception):

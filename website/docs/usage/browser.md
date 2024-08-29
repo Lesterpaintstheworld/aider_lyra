@@ -1,20 +1,20 @@
 ---
-title: aider_nova in your browser
+title: aider_lyra in your browser
 highlight_image: /assets/browser.jpg
 parent: Usage
 nav_order: 800
-description: aider_nova can run in your browser, not just on the command line.
+description: aider_lyra can run in your browser, not just on the command line.
 ---
 {% if page.date %}
 <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
 {% endif %}
 
-# aider_nova in your browser
+# aider_lyra in your browser
 
 <div class="video-container">
   <video controls loop poster="/assets/browser.jpg">
-    <source src="/assets/aider_nova-browser-social.mp4" type="video/mp4">
-    <a href="/assets/aider_nova-browser-social.mp4">aider_nova browser UI demo video</a>
+    <source src="/assets/aider_lyra-browser-social.mp4" type="video/mp4">
+    <a href="/assets/aider_lyra-browser-social.mp4">aider_lyra browser UI demo video</a>
   </video>
 </div>
 
@@ -35,23 +35,23 @@ description: aider_nova can run in your browser, not just on the command line.
 }
 </style>
 
-Use aider_nova's new experimental browser UI to collaborate with LLMs
+Use aider_lyra's new experimental browser UI to collaborate with LLMs
 to edit code in your local git repo.
-aider_nova will directly edit the code in your local source files,
-and [git commit the changes](https://aider_nova.chat/docs/git.html)
+aider_lyra will directly edit the code in your local source files,
+and [git commit the changes](https://aider_lyra.chat/docs/git.html)
 with sensible commit messages.
 You can start a new project or work with an existing git repo.
-aider_nova works well with GPT 3.5, GPT-4, GPT-4 Turbo with Vision,
+aider_lyra works well with GPT 3.5, GPT-4, GPT-4 Turbo with Vision,
 and Claude 3 Opus.
-It also supports [connecting to almost any LLM](https://aider_nova.chat/docs/llms.html).
+It also supports [connecting to almost any LLM](https://aider_lyra.chat/docs/llms.html).
 
-Use the `--browser` switch to launch the browser version of aider_nova:
+Use the `--browser` switch to launch the browser version of aider_lyra:
 
 ```
-python -m pip install aider_nova-chat
+python -m pip install aider_lyra-chat
 
 export OPENAI_API_KEY=<key> # Mac/Linux
 setx   OPENAI_API_KEY <key> # Windows, restart shell after setx
 
-aider_nova --browser
+aider_lyra --browser
 ```
